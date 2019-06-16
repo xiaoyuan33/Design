@@ -41,7 +41,7 @@
 }
 
 .brand .first {
-	color: #ccc;
+	color: #ffffff;
 	font-style: italic;
 }
 
@@ -88,7 +88,7 @@
 						<li><a tabindex="-1" href="logout">注销</a></li>
 					</ul></li>
 			</ul>
-			<a class="brand" href="index.jsp"><span class="first">软件工程专业工作管理系统</span>
+			<a class="brand" href="index.jsp"><span class="first">NEFU考试后台系统</span>
 				<span class="second"></span></a>
 		</div>
 	</div>
@@ -109,12 +109,12 @@
 					<tr>
 						<td>${state.count+(pageInfo.pageNum-1)*pageInfo.pageSize}</td>
 						<td>${clazz.name}</td>
-						<td>${clazz.authority}</td>
+						<td><p id="change">${clazz.authority}</p></td>
 						<c:if test="${clazz.authority=='user'}">
-						<td><button type="button" onclick="change(this)" name="${clazz.name}">修改</button></td>
+						<td><button type="button" onclick="change()" id="changeB">修改</button></td>
 						</c:if>
 						<c:if test="${clazz.authority=='admin'}">
-						<td><button type="button" onclick="del(this)" name="${clazz.name}">删除</button></td>
+						<td><button type="button" onclick="del()" id="delB">删除</button></td>
 						</c:if>
 					</tr>
 				</c:forEach>
@@ -129,7 +129,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="modal small hide fade" id="myModal" tabindex="-1"
 		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
@@ -150,6 +149,18 @@
 	</div>
 </body>
 <script type="text/javascript">
-
+function change(){
+	var t=document.getElementById("change");
+	var y=document.getElementById("changeB");
+	 t.innerHTML="admin"
+	 y.innerHTML="删除"
+}
+function del(){
+	alert("已改变权限！");
+	var t=document.getElementById("del");
+	var y=document.getElementById("delB");
+	 t.innerHTML="usesr"
+	y.innerHTML="修改"
+}
 </script>
 </html>

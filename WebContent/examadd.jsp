@@ -17,6 +17,27 @@
 
 <!-- Demo page code -->
 
+<style type="text/css">
+#line-chart {
+	height: 300px;
+	width: 800px;
+	margin: 0px auto;
+	margin-top: 1em;
+}
+
+.brand {
+	font-family: georgia, serif;
+}
+
+.brand .first {
+	color: #fff;
+	font-style: italic;
+}
+
+.brand .second {
+	color: #fff;
+	font-weight: bold; 
+}
 </style>
 <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 <link rel="apple-touch-icon-precomposed"
