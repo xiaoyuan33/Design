@@ -31,18 +31,36 @@
 }
 
 .brand .first {
-	color: #ccc;
+	color: #fff;
 	font-style: italic;
 }
 
 .brand .second {
 	color: #fff;
-	font-weight: bold;
+	font-weight: bold; 
 }
 </style>
+<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed"
+	href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" 
+	href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" 
+	href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="../assets/ico/apple-touch-icon-57-precomposed.png">
+<title>Insert title here</title>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+	$("[rel=tooltip]").tooltip();
+	$(function() {
+		$('.demo-cancel-click').click(function() {
+			return false;
+		});
+	});
+</script>
 </head>
-<body class="">
-
+<body>
 	<div class="navbar">
 		<div class="navbar-inner">
 			<ul class="nav pull-right">
@@ -52,24 +70,25 @@
 						class="icon-user"></i>${user.name}<i class="icon-caret-down"></i>
 				</a>
 					<ul class="dropdown-menu">
-						<li><a tabindex="-1" href="/Design/index.jsp">返回主页</a></li>
+						<li><a tabindex="-1" href="index.jsp">返回主页</a></li>
 						<li class="divider"></li>
 						<li><a tabindex="-1" class="visible-phone" href="#">Settings</a></li>
 						<li class="divider visible-phone"></li>
-						<li><a tabindex="-1" href="/Design/logout">注销</a></li>
+						<li><a tabindex="-1" href="logout">注销</a></li>
 					</ul></li>
 			</ul>
-			<a class="brand" href="/Design/index.jsp"><span class="first">软件工程专业工作管理系统</span>
-				<span class="second"></span></a>
+			      <a class="brand" href="/Design/index.jsp"><span class="first">NEFU考试后台系统</span> <span class="second"></span></a>
 		</div>
 	</div>
 	<div class="sidebar-nav">
-		<a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i
+		<a href="#dashboard-menu" class="nav-header" data-toggle="collapse" ><i
 			class="icon-dashboard"></i>用户管理<i class="icon-chevron-up"></i></a>
-		<ul id="dashboard-menu" class="nav nav-list collapse">
-			<li><a href="/Design/useradd.jsp">添加用户</a></li>
-			<li><a href="/Design/userchange.jsp">修改用户</a></li>
-			<li><a href="/Design/listuser/1">查看全部管理信息</a></li>
+		<ul id="dashboard-menu" class="nav nav-list collapse in">
+			<li><a href="useradd.jsp">用户注册</a></li>
+			<!-- a="useradd.jsp"-->
+			<li><a href="userchange.jsp">用户修改</a></li>
+			<!-- a="userchange.jsp" -->
+			<li><a href="listuser/1">权限设置</a></li>
 		</ul>
 
 		<a href="#legal-menu" class="nav-header" data-toggle="collapse"><i
@@ -77,22 +96,15 @@
 		<ul id="legal-menu" class="nav nav-list collapse">
 			<li><a href="/Design/examadd.jsp">添加监考信息</a></li>
 			<li><a href="/Design/examallot/1">监考分配</a></li>
-			<li><a href="/Design/examallotchange/1">监考分配修改</a></li>
 			<li><a href="/Design/listexam/1">查看全部考试信息</a></li>
 		</ul>
+		
+		<a href="#news-menu" class="nav-header" data-toggle="collapse" ><i class="icon-question-sign"></i>任务管理<i class="icon-chevron-up"></i></a>
+                  <ul id="news-menu" class="nav nav-list collapse">
+                      <li ><a href="page.jsp">发布新任务</a></li> 
+                      <li ><a href="page-list.jsp">任务列表</a></li> 
+                  </ul>
 
-		<a href="#news-menu" class="nav-header" data-toggle="collapse"><i
-			class="icon-question-sign"></i>消息管理<i class="icon-chevron-up"></i></a>
-		<ul id="news-menu" class="nav nav-list collapse in">
-			<li><a href="/Design/page.jsp">发布消息</a></li>
-			<li><a href="/Design/page-list.jsp">回复消息</a></li>
-		</ul>
-		<a href="#files-menu" class="nav-header" data-toggle="collapse"><i
-			class="icon-comment"></i>文件管理<i class="icon-chevron-up"></i></a>
-		<ul id="files-menu" class="nav nav-list collapse">
-			<li><a href="/Design/file-up.jsp">发布文件</a></li>
-			<li><a href="/Design/file-send.jsp">回复文件</a></li>
-		</ul>
 	</div>
 	<div class="content">
 
