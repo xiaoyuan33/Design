@@ -58,6 +58,9 @@
 			return false;
 		});
 	});
+	$(function() {
+		$("#name").load("getalluser/0")
+	})
 </script>
 </head>
 <body>

@@ -18,44 +18,50 @@
 
     <!-- Demo page code -->
 
-    <style type="text/css">
-        #line-chart {
-            height:300px;
-            width:800px;
-            margin: 0px auto;
-            margin-top: 1em;
-        }
-        .brand { font-family: georgia, serif; }
-        .brand .first {
-            color: #ccc;
-            font-style: italic;
-        }
-        .brand .second {
-            color: #fff;
-            font-weight: bold;
-        }
-        li{
-            list-style-type:none;
-            border-bottom-color: black;
-            border: 2px;
-        }
-    </style>
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript">
-        $("[rel=tooltip]").tooltip();
-        $(function() {
-            $('.demo-cancel-click').click(function(){return false;});
-        });
-    </script>
+   <style type="text/css">
+#line-chart {
+	height: 300px;
+	width: 800px;
+	margin: 0px auto;
+	margin-top: 1em;
+}
+
+.brand {
+	font-family: georgia, serif;
+}
+
+.brand .first {
+	color: #fff;
+	font-style: italic;
+}
+
+.brand .second {
+	color: #fff;
+	font-weight: bold; 
+}
+</style>
+<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed"
+	href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" 
+	href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" 
+	href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+	href="../assets/ico/apple-touch-icon-57-precomposed.png">
 <title>Insert title here</title>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+	$("[rel=tooltip]").tooltip();
+	$(function() {
+		$('.demo-cancel-click').click(function() {
+			return false;
+		});
+	});
+</script>
 </head>
 <body>
-     <div class="navbar">
+	<div class="navbar">
 		<div class="navbar-inner">
 			<ul class="nav pull-right">
 
@@ -71,7 +77,7 @@
 						<li><a tabindex="-1" href="logout">注销</a></li>
 					</ul></li>
 			</ul>
-			      <a class="brand" href="index.jsp"><span class="first">软件工程专业工作管理系统</span> <span class="second"></span></a>
+			      <a class="brand" href="/Design/index.jsp"><span class="first">NEFU考试后台系统</span> <span class="second"></span></a>
 		</div>
 	</div>
 		

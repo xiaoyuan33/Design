@@ -53,14 +53,7 @@
 	href="../assets/ico/apple-touch-icon-57-precomposed.png">
 <title>Insert title here</title>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript">
-	$("[rel=tooltip]").tooltip();
-	$(function() {
-		$('.demo-cancel-click').click(function() {
-			return false;
-		});
-	});
-</script>
+
 </head>
 <body>
 	<div class="navbar">
@@ -112,11 +105,6 @@
 		<div class="header">
 			<h1 class="page-title">发布消息</h1>
 		</div>
-		<ul class="breadcrumb">
-			<li><a href="index.jsp">主页</a> <span class="divider">/</span></li>
-			<li><a href="users.jsp">消息管理</a> <span class="divider">/</span></li>
-			<li class="active"><a href="page.jsp">发布消息</a></li>
-		</ul>
 
 		<div class="container-fluid">
 			<div class="row-fluid">

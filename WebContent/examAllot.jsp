@@ -59,6 +59,12 @@
 			return false;
 		});
 	});
+	</script>
+	<script type="text/javascript">
+	$(function(){
+	    $("#examId").load("../getexam/0")
+     $("#userId").load("../getuser/0")
+      })
 </script>
 </head>
 <body>

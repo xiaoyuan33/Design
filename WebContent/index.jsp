@@ -85,24 +85,24 @@
 		<a href="#dashboard-menu" class="nav-header" data-toggle="collapse" ><i
 			class="icon-dashboard"></i>用户管理<i class="icon-chevron-up"></i></a>
 		<ul id="dashboard-menu" class="nav nav-list collapse in">
-			<li><a href="useradd.jsp">用户注册</a></li>
+			<li><a href="useradd.jsp" id="hide1">用户注册</a></li>
 			<!-- a="useradd.jsp"-->
 			<li><a href="userchange.jsp">用户修改</a></li>
 			<!-- a="userchange.jsp" -->
-			<li><a href="listuser/1">权限设置</a></li>
+			<li><a href="listuser/1" id="hide2">权限设置</a></li>
 		</ul>
 
 		<a href="#legal-menu" class="nav-header" data-toggle="collapse"><i
 			class="icon-legal"></i>监考管理<i class="icon-chevron-up"></i></a>
 		<ul id="legal-menu" class="nav nav-list collapse">
-			<li><a href="/Design/examadd.jsp">添加监考信息</a></li>
+			<li><a href="/Design/examadd.jsp" id="hide3">添加监考信息</a></li>
 			<li><a href="/Design/examallot/1">监考分配</a></li>
 			<li><a href="/Design/listexam/1">查看全部考试信息</a></li>
 		</ul>
 		
 		<a href="#news-menu" class="nav-header" data-toggle="collapse" ><i class="icon-question-sign"></i>任务管理<i class="icon-chevron-up"></i></a>
                   <ul id="news-menu" class="nav nav-list collapse">
-                      <li ><a href="page.jsp">发布新任务</a></li> 
+                      <li ><a href="page.jsp" id="hide4">发布新任务</a></li> 
                       <li ><a href="page-list.jsp">任务列表</a></li> 
                   </ul>
 
@@ -169,4 +169,12 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+if(${name=="test"}){
+$("#hide1").hide();
+$("#hide2").hide();
+$("#hide3").hide();
+$("#hide4").hide();
+}
+</script>
 </html>

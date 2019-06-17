@@ -19,8 +19,7 @@
     <script src="lib/jquery-1.7.2.min.js" type="text/javascript"></script>
 
     <!-- Demo page code -->
-
-    <style type="text/css">
+	<style type="text/css">
         #line-chart {
             height:300px;
             width:800px;
@@ -29,7 +28,7 @@
         }
         .brand { font-family: georgia, serif; }
         .brand .first {
-            color: #ccc;
+            color: #ffffff;
             font-style: italic;
         }
         .brand .second {
@@ -41,50 +40,22 @@
             width: 100%;
             list-style-type:none;
         }
-    <style type="text/css">
-#line-chart {
-	height: 300px;
-	width: 800px;
-	margin: 0px auto;
-	margin-top: 1em;
-}
+    </style>
 
-.brand {
-	font-family: georgia, serif;
-}
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-.brand .first {
-	color: #fff;
-	font-style: italic;
-}
-
-.brand .second {
-	color: #fff;
-	font-weight: bold; 
-}
-</style>
-<link rel="shortcut icon" href="../assets/ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed"
-	href="../assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" 
-	href="../assets/ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" 
-	href="../assets/ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed"
-	href="../assets/ico/apple-touch-icon-57-precomposed.png">
-<title>Insert title here</title>
-<script src="lib/bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript">
-	$("[rel=tooltip]").tooltip();
-	$(function() {
-		$('.demo-cancel-click').click(function() {
-			return false;
-		});
-	});
-</script>
-</head>
-<body>
-	<div class="navbar">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+    <body class=""> 
+<div class="navbar">
 		<div class="navbar-inner">
 			<ul class="nav pull-right">
 
